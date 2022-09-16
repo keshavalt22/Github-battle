@@ -1,0 +1,171 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom Style*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    text-align: center;
+}
+
+@keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translate3d(0, -16px, 0);
+  }
+}
+
+.bouncing-loader {
+  display: flex;
+  justify-content: center;
+}
+
+.bouncing-loader > div {
+  width: 16px;
+  height: 16px;
+  margin: 3rem 0.2rem;
+  background: #8385aa;
+  border-radius: 50%;
+  animation: bouncing-loader 0.6s infinite alternate;
+}
+
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.nav{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu {
+    color: black;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.active {
+    padding: 6px 12px;
+    background-color: slategrey;
+    color: white;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.box {
+  width: 50%;
+  text-align: center;
+}
+
+.box img {
+  width: 80%;
+}
+
+h1 {
+  font-size: 44px;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.header{
+  margin-bottom: 44px;
+}
+
+.link {
+  margin-left: 12px;
+  text-decoration: none;
+  font-size: 24px;
+  color: brown;
+}
+
+.submit {
+  font-size: 22px;
+  color: gray;
+  margin-left: 40px;
+}
+
+.submit input {
+  padding: 8px 12px;
+  font-size: 16px;
+  color: gray;
+}
+
+.battle h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: darkorange;
+  text-align: center;
+  margin: 24px auto;
+}
